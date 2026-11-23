@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNow - Khám Phá Thế Giới</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0d9488; 
+            text-decoration: none;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: #0d9488;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('images/banner.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 26px;
+            margin-bottom: 25px;
+            color: #1f2937;
+            border-left: 5px solid #0d9488;
+            padding-left: 10px;
+        }
+        .tour-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .tour-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .tour-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        .tour-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .tour-content {
+            padding: 20px;
+        }
+        .tour-content h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #1f2937;
+        }
+        .tour-content p {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e11d48; 
+        }
+
+        
+        footer {
+            background-color: #1f2937;
+            color: #9ca3af;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <div class="nav-container">
+            <a href="trangchu.html" class="logo">LnQTravel</a>
+            <ul class="nav-links">
+                <li><a href="trangchu.html" class="active">Trang Chủ</a></li>
+                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                <li><a href="lienhe.html">Liên Hệ</a></li>
+                <li><a href="dattour.html">Đặt Tour</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <section class="hero">
+        <h1>Khám Phá Vẻ Đẹp Việt Nam</h1>
+        <p>Trải nghiệm những chuyến đi tuyệt vời cùng dịch vụ chuyên nghiệp nhất</p>
+    </section>
+
+    
+    <div class="container">
+        <h2 class="section-title">Các Tour Du Lịch Nổi Bật</h2>
+        
+        <div class="tour-grid">
+            
+            <a href="details/nghean.html" class="tour-card">
+                <img src="images/nghean.jpg" alt="Nghệ An" class="tour-img">
+                <div class="tour-content">
+                    <h3>Nghệ An - Về Miền Quê Bác</h3>
+                    <p>Thăm quê hương Chủ tịch Hồ Chí Minh, tắm biển Cửa Lò trong xanh và thưởng thức đặc sản xứ Nghệ.</p>
+                    <p class="price">1.800.000 VNĐ</p>
+                </div>
+            </a>
+
+            
+            <a href="details/dalat.html" class="tour-card">
+                <img src="images/dalat.webp" alt="Đà Lạt" class="tour-img">
+                <div class="tour-content">
+                    <h3>Đà Lạt - Thành Phố Ngàn Hoa</h3>
+                    <p>Tận hưởng không khí se lạnh, check-in đồi thông thơ mộng và các quán cà phê view ngắm mây.</p>
+                    <p class="price">2.900.000 VNĐ</p>
+                </div>
+            </a>
+
+            
+             <a href="details/hagiang.html" class="tour-card">
+                <img src="images/hagiang.jpg" alt="Hà Giang" class="tour-img">
+                <div class="tour-content">
+                    <h3>Hà Giang - Mùa Hoa Tam Giác Mạch</h3>
+                    <p>Khám phá cao nguyên đá đồng văn hùng vĩ và văn hóa bản địa đặc sắc vùng cao.</p>
+                    <p class="price">2.500.000 VNĐ</p>
+                </div>
+            </a>
+
+            
+           <a href="details/danang.html" class="tour-card">
+                <img src="images/danang.jpg" alt="Đà Nẵng" class="tour-img">
+                <div class="tour-content">
+                    <h3>Đà Nẵng - Hội An</h3>
+                    <p>Tận hưởng thành phố đáng sống nhất Việt Nam và phố cổ lung linh đèn lồng về đêm.</p>
+                    <p class="price">3.200.000 VNĐ</p>
+                </div>
+            </a>
+
+            
+            <a href="details/phuquoc.html" class="tour-card">
+                <img src="images/phuquoc.jpg" alt="Phú Quốc" class="tour-img">
+                <div class="tour-content">
+                    <h3>Phú Quốc - Đảo Ngọc Thiên Đường</h3>
+                    <p>Nghỉ dưỡng biển xanh cát trắng, nắng vàng và thưởng thức hải sản tươi ngon.</p>
+                    <p class="price">4.500.000 VNĐ</p>
+                </div>
+            </a>
+            
+            <a href="details/cuchi.html" class="tour-card">
+                <img src="images/cuchi.jpg" alt="Địa đạo Củ Chi" class="tour-img">
+                <div class="tour-content">
+                    <h3>TP.HCM - Địa đạo Củ Chi</h3>
+                    <p>Khám phá hệ thống hầm ngầm lịch sử kỳ vĩ lòng đất và tìm hiểu về tinh thần kiên cường của vùng đất thép.</p>
+                    <p class="price">1.200.000 VNĐ</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2026 Lập Trình Web - Lê Như Quỳnh. 255748020110172</p>
+    </footer>
+
+</body>
+</html>

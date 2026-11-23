@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Tour Phú Quốc - LnQTravel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0d9488;
+            text-decoration: none;
+        }
+        .back-btn {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            background: #e5e7eb;
+            padding: 6px 15px;
+            border-radius: 20px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background: #d1d5db;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 {
+            font-size: 32px;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+        .intro-text {
+            font-size: 17px;
+            color: #4b5563;
+            background: #f0fdf4;
+            border-left: 5px solid #0d9488;
+            padding: 18px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+        .photo-grid img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .photo-grid img:hover {
+            transform: scale(1.03);
+        }
+        .section-heading {
+            font-size: 22px;
+            color: #1f2937;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+        }
+        .itinerary-list {
+            list-style-type: none;
+        }
+        .itinerary-list li {
+            margin-bottom: 15px;
+        }
+        .price-box {
+            margin-top: 40px;
+            background: #fff1f2;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .price-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e11d48;
+        }
+        .book-btn {
+            background-color: #0d9488;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-decoration: none;
+        }
+        .book-btn:hover {
+            background-color: #0f766e;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #9ca3af;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="../trangchu.html" class="logo">LnQTravel</a>
+            <a href="../trangchu.html" class="back-btn">Quay lại Trang Chủ</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Phú Quốc - Đảo Ngọc Thiên Đường</h1>
+
+        <div class="intro-text">
+            "Bạn biết không, Phú Quốc được mệnh danh là Đảo Ngọc lớn nhất Việt Nam, nơi sở hữu những bãi biển cát trắng mịn màng ôm trọn làn nước trong vắt màu ngọc bích. Không chỉ có thiên nhiên nghỉ dưỡng tuyệt sắc, đây còn là thiên đường hoàng hôn rực rỡ và những trải nghiệm khám phá biển đảo đáng nhớ nhất."
+        </div>
+
+        <div class="photo-grid">
+            <img src="../images/phuquoc1.jpg" alt="Cảnh Phú Quốc 1">
+            <img src="../images/phuquoc2.jpg" alt="Cảnh Phú Quốc 2">
+            <img src="../images/phuquoc3.jpg" alt="Cảnh Phú Quốc 3">
+        </div>
+
+        <h2 class="section-heading">Điểm nổi bật của Tour</h2>
+        <ul class="itinerary-list">
+            <li><strong>Khám phá quần đảo phía Nam:</strong> Trải nghiệm cano tham quan các hòn đảo hoang sơ, lặn ngắm san hô tuyệt đẹp tại Hòn Mây Rút, Hòn Móng Tay.</li>
+            <li><strong>Trải nghiệm giải trí hiện đại:</strong> Check-in tại Cầu Hôn (Kiss Bridge), khám phá thị trấn hoàng hôn Địa Trung Hải và trải nghiệm tuyến cáp treo vượt biển dài nhất thế giới.</li>
+            <li><strong>Thưởng thức ẩm thực biển đảo:</strong> Thưởng thức các món đặc sản trứ danh như gỏi cá trích, hải sản tươi sống tại chợ đêm và các nhà hàng ven biển.</li>
+        </ul>
+
+        <h2 class="section-heading">Lịch trình tóm tắt (3 Ngày 2 Đêm)</h2>
+        <ul class="itinerary-list">
+            <li><strong>Ngày 1:</strong> Đón khách tại sân bay Phú Quốc - Check-in Thị trấn Hoàng Hôn - Ngắm hoàng hôn tại Cầu Hôn.</li>
+            <li><strong>Ngày 2:</strong> Khám phá các đảo bằng cano - Lặn ngắm san hô - Tham quan VinWonders hoặc Safari (tùy chọn).</li>
+            <li><strong>Ngày 3:</strong> Mua sắm đặc sản (Hồ tiêu, nước mắm, ngọc trai) - Tiễn đoàn ra sân bay, kết thúc hành trình.</li>
+        </ul>
+
+        <div class="price-box">
+            <div>
+                <p style="color: #6b7280; font-size: 14px;">Giá trọn gói cho 1 khách:</p>
+                <div class="price-value">4.500.000 VNĐ</div>
+            </div>
+            <a href="../dattour.html" class="book-btn">Đăng Ký Tour Ngay</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Lập Trình Web - Lê Như Quỳnh. 255748020110172.</p>
+    </footer>
+
+</body>
+</html>
