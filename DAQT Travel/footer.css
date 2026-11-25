@@ -1,0 +1,239 @@
+ .daqt-footer,
+.daqt-footer * {
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.daqt-footer {
+  width: 100%;
+  background-color: #111827;
+  color: #cbd5e1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 40px 24px 18px;
+}
+
+.daqt-footer-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 0.85fr 1.15fr 1.3fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.daqt-logo {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 800;
+  color: #0d9488;
+  text-decoration: none;
+  line-height: 1.15;
+}
+
+.daqt-slogan {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #94a3b8;
+  margin-top: 3px;
+  margin-bottom: 14px;
+}
+
+.daqt-company {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.daqt-heading {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.daqt-pay-heading {
+  margin-top: 20px;
+}
+
+.daqt-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.daqt-list li {
+  margin-bottom: 8px;
+  color: #cbd5e1;
+}
+
+.daqt-list li a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.daqt-list li a:hover {
+  color: #38bdf8;
+}
+
+.daqt-socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 14px;
+}
+
+.daqt-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #e2e8f0;
+  text-decoration: none;
+}
+
+.daqt-socials a svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+.daqt-socials a.social-yt:hover {
+  background-color: #dc2626;
+  border-color: #dc2626;
+  color: #ffffff;
+}
+
+.daqt-socials a.social-fb:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.daqt-socials a.social-tt:hover {
+  background-color: #0f172a;
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+.daqt-socials a.social-zl:hover {
+  background-color: #0284c7;
+  border-color: #0284c7;
+  color: #ffffff;
+}
+
+.daqt-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #f8fafc;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.daqt-socials a:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+.daqt-hotline {
+  display: inline-block;
+  background-color: #dc2626;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 999px;
+}
+
+.daqt-hotline-sub {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 6px;
+}
+
+.daqt-certs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.daqt-cert-bct {
+  display: inline-block;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.daqt-cert-dmca {
+  display: inline-block;
+  background-color: #15803d;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.daqt-payments {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.daqt-pay-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 3px 4px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.daqt-pay-item svg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.daqt-footer-bottom {
+  max-width: 1180px;
+  margin: 28px auto 0;
+  padding-top: 14px;
+  border-top: 1px solid #1e293b;
+  font-size: 12px;
+  color: #94a3b8;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .daqt-footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .daqt-footer-inner {
+    grid-template-columns: 1fr;
+  }
+}
