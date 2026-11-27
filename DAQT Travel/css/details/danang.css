@@ -1,0 +1,137 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0d9488;
+            text-decoration: none;
+        }
+        .back-btn {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            background: #e5e7eb;
+            padding: 6px 15px;
+            border-radius: 20px;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background: #d1d5db;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 {
+            font-size: 32px;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+        .intro-text {
+            font-size: 17px;
+            color: #4b5563;
+            background: #f0fdf4;
+            border-left: 5px solid #0d9488;
+            padding: 18px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+        .photo-grid img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .photo-grid img:hover {
+            transform: scale(1.03);
+        }
+        .section-heading {
+            font-size: 22px;
+            color: #1f2937;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+        }
+        .itinerary-list {
+            list-style-type: none;
+        }
+        .itinerary-list li {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .price-box {
+            margin-top: 40px;
+            background: #fff1f2;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .price-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e11d48;
+        }
+        .book-btn {
+            background-color: #0d9488;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-decoration: none;
+        }
+        .book-btn:hover {
+            background-color: #0f766e;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+.tour-price-label { color: #6b7280; font-size: 14px; }

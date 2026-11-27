@@ -100,9 +100,11 @@
   text-decoration: none;
 }
 
-.daqt-socials a svg {
+.daqt-socials a i {
   display: block;
   flex-shrink: 0;
+  font-size: 16px;
+  line-height: 1;
 }
 
 .daqt-socials a.social-yt:hover {

@@ -4,193 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAQT Travel - Khám Phá Thế Giới</title>
-    <link rel="stylesheet" href="footer.css">
-    <style>
-       * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;}
-        header {
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;}
-        .nav-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;}
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #0d9488; 
-            text-decoration: none;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: #4b5563;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        .nav-links a:hover, .nav-links a.active {
-            color: #0d9488;
-        }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/trangchu.css">
 
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('images/banner.jpg') center/cover no-repeat;
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-            position: relative;
-        }
-        .hero h1 {
-            font-size: 38px;
-            margin-bottom: 10px;}
-        .hero p {
-            font-size: 18px;
-            opacity: 0.9;}
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 0 20px;}
-        .section-title {
-            font-size: 26px;
-            margin-bottom: 25px;
-            color: #1f2937;
-            border-left: 5px solid #0d9488;
-            padding-left: 10px;}
-        .tour-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-        .tour-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-        .tour-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-        }
-        .tour-img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-        .tour-content {
-            padding: 20px;
-        }
-        .tour-content h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: #1f2937;
-        }
-        .tour-content p {
-            font-size: 14px;
-            color: #6b7280;
-            margin-bottom: 15px;
-        }
-        .price {
-            font-size: 18px;
-            font-weight: bold;
-            color: #e11d48; 
-        }
-
-        .tour-carousel {
-  position: relative;}
-
-.tour-grid {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  padding: 6px 2px 14px;
-}
-
-.tour-grid::-webkit-scrollbar {
-  display: none;}
-
-.tour-card {
-  flex: 0 0 calc((100% - 60px) / 4);
-  min-width: calc((100% - 60px) / 4);}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  border: 1px solid #d1d5db;
-  background-color: #ffffff;
-  color: #1f2937;
-  font-size: 20px;
-  line-height: 1;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  z-index: 10;}
-
-.carousel-btn.prev {
-  left: -14px;}
-.carousel-btn.next {
-  right: -14px;}
-
-.carousel-btn:hover {
-  background-color: #0d9488;
-  border-color: #0d9488;
-  color: #ffffff;}
-
-@media (max-width: 900px) {
-  .tour-card {
-    flex: 0 0 calc((100% - 20px) / 2);
-    min-width: calc((100% - 20px) / 2);}}
-
-@media (max-width: 560px) {
-  .tour-card {
-    flex: 0 0 100%;
-    min-width: 100%; }}
-
-.combo-section {margin-top: 40px;}
-.combo-banner {
-  display: block;
-  width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s, box-shadow 0.3s;}
-.combo-banner:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);}
-.combo-banner img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;}
-
-    </style>
 </head>
 <body>
-   
+
     <header>
         <div class="nav-container">
             <a href="trangchu.html" class="logo">DAQT Travel</a>
@@ -202,227 +22,491 @@
             </ul>
         </div>
     </header>
-    
+
     <section class="hero">
-        <h1>Khám Phá Vẻ Đẹp Việt Nam</h1>
-        <p>Trải nghiệm những chuyến đi tuyệt vời cùng dịch vụ chuyên nghiệp nhất</p>
-    </section>
-    
-    <div class="container">
-        <h2 class="section-title">Các Tour Du Lịch Nổi Bật</h2>        
-        <div class="tour-carousel">
-            <button type="button" class="carousel-btn prev" aria-label="Tour trước">&lsaquo;</button>
-        
-          <div class="tour-grid" id="tourGrid">
-            <a href="details/nghean.html" class="tour-card">
-                <img src="images/nghean.jpg" alt="Nghệ An" class="tour-img">
-                <div class="tour-content">
-                    <h3>Nghệ An - Về Miền Quê Bác</h3>
-                    <p>Thăm quê hương Chủ tịch Hồ Chí Minh, tắm biển Cửa Lò trong xanh và thưởng thức đặc sản xứ Nghệ.</p>
-                    <p class="price">1.800.000 VNĐ</p>
-                </div>
-            </a>
-            
-            <a href="details/dalat.html" class="tour-card">
-                <img src="images/dalat.webp" alt="Đà Lạt" class="tour-img">
-                <div class="tour-content">
-                    <h3>Đà Lạt - Thành Phố Ngàn Hoa</h3>
-                    <p>Tận hưởng không khí se lạnh, check-in đồi thông thơ mộng và các quán cà phê view ngắm mây.</p>
-                    <p class="price">2.900.000 VNĐ</p>
-                </div>
-            </a>
-            
-             <a href="details/hagiang.html" class="tour-card">
-                <img src="images/hagiang.jpg" alt="Hà Giang" class="tour-img">
-                <div class="tour-content">
-                    <h3>Hà Giang - Mùa Hoa Tam Giác Mạch</h3>
-                    <p>Khám phá cao nguyên đá đồng văn hùng vĩ và văn hóa bản địa đặc sắc vùng cao.</p>
-                    <p class="price">2.500.000 VNĐ</p>
-                </div>
-            </a>
-            
-           <a href="details/danang.html" class="tour-card">
-                <img src="images/danang.jpg" alt="Đà Nẵng" class="tour-img">
-                <div class="tour-content">
-                    <h3>Đà Nẵng - Hội An</h3>
-                    <p>Tận hưởng thành phố đáng sống nhất Việt Nam và phố cổ lung linh đèn lồng về đêm.</p>
-                    <p class="price">3.200.000 VNĐ</p>
-                </div>
-            </a>
-            
-            <a href="details/phuquoc.html" class="tour-card">
-                <img src="images/phuquoc.jpg" alt="Phú Quốc" class="tour-img">
-                <div class="tour-content">
-                    <h3>Phú Quốc - Đảo Ngọc Thiên Đường</h3>
-                    <p>Nghỉ dưỡng biển xanh cát trắng, nắng vàng và thưởng thức hải sản tươi ngon.</p>
-                    <p class="price">4.500.000 VNĐ</p>
-                </div>
-            </a>
-            
-            <a href="details/cuchi.html" class="tour-card">
-                <img src="images/cuchi.jpg" alt="Địa đạo Củ Chi" class="tour-img">
-                <div class="tour-content">
-                    <h3>TP.HCM - Địa đạo Củ Chi</h3>
-                    <p>Khám phá hệ thống hầm ngầm lịch sử kỳ vĩ lòng đất và tìm hiểu về tinh thần kiên cường của vùng đất thép.</p>
-                    <p class="price">1.200.000 VNĐ</p>
-                </div>
-            </a>
+        <video class="hero-video" autoplay muted loop playsinline poster="images/banner.jpg">
+            <source src="images/hero.mp4" type="video/mp4">
+            <source src="images/hero.webm" type="video/webm">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Khám Phá Vẻ Đẹp Việt Nam</h1>
+            <p>Trải nghiệm những chuyến đi tuyệt vời cùng dịch vụ chuyên nghiệp nhất</p>
         </div>
-        <button type="button" class="carousel-btn next" aria-label="Tour tiếp theo">&rsaquo;</button>
-      </div>
-      <div class="combo-section">
-  <h2 class="section-title">Combo Tốt Nhất Hôm Nay</h2>
-  <a href="details/combosapa.html" class="combo-banner">
-    <img src="images/sapa.png" alt="Combo Tốt Nhất Hôm Nay">
-  </a>
-</div>
-    </div>          
-        
-<footer class="daqt-footer">
-  <div class="daqt-footer-inner">
-    <div class="daqt-col daqt-col-info">
-      <a href="trangchu.html" class="daqt-logo">DAQT Travel</a>
-      <div class="daqt-company">Công ty Cổ phần Du Lịch DAQT</div>
-      <ul class="daqt-list">
-        <li>182 Lê Duẩn, TP.Vinh, Tỉnh Nghệ An</li>
-        <li>info@daqttravel.com</li>
-        <li>Theo dõi chúng tôi trên:</li>
-      </ul>
-      <div class="daqt-socials">
-        <a href="#" aria-label="YouTube" class="social-yt">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.8 2.8 0 0 0-2 2A29.4 29.4 0 0 0 2 12a29.4 29.4 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.8 2.8 0 0 0 2-2A29.4 29.4 0 0 0 22 12a29.4 29.4 0 0 0-.4-4.8zM10 15.2V8.8l5.4 3.2-5.4 3.2z"/>
-          </svg>
+    </section>
+    <section class="search" aria-label="Tìm kiếm chuyến đi">
+        <div class="tabs" role="tablist" aria-label="Loại dịch vụ">
+            <button class="tab active" type="button" role="tab" aria-selected="true" data-service="tour">
+                <i class="bi bi-flag-fill icon" aria-hidden="true"></i>
+                TOUR TRỌN GÓI
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-service="flight">
+                <i class="bi bi-airplane-fill icon" aria-hidden="true"></i>
+                VÉ MÁY BAY
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-service="hotel">
+                <i class="bi bi-building-fill icon" aria-hidden="true"></i>
+                KHÁCH SẠN
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-service="flight-hotel">
+                <i class="bi bi-buildings-fill icon" aria-hidden="true"></i>
+                VÉ MÁY BAY + KHÁCH SẠN
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false">
+                <i class="bi bi-ticket-perforated-fill icon" aria-hidden="true"></i>
+                VÉ TRẢI NGHIỆM
+            </button>
+        </div>
+        <div class="search-panel service-panel" data-service-panel="tour">
+            <div class="search-fields">
+                <div class="field autocomplete-field">
+                    <span class="field-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                    <label class="field-content" for="departure">
+                        <span class="field-title">Điểm khởi hành</span>
+                        <input type="text" id="departure" value="Tất cả" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="departureSuggestions" autocomplete="off">
+                    </label>
+                    <button class="clear-btn" type="button" aria-label="Xóa điểm khởi hành" onclick="clearDeparture()"><i class="bi bi-x-lg" aria-hidden="true"></i></button>
+                    <div class="suggestion-list" id="departureSuggestions" role="listbox" aria-label="Gợi ý điểm khởi hành"></div>
+                </div>
+                <div class="field autocomplete-field">
+                    <span class="field-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                    <label class="field-content" for="destination">
+                        <span class="field-title">Điểm đến</span>
+                        <input type="text" id="destination" placeholder="Địa điểm bất kỳ..." role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="destinationSuggestions" autocomplete="off">
+                    </label>
+                    <div class="suggestion-list" id="destinationSuggestions" role="listbox" aria-label="Gợi ý điểm đến"></div>
+                </div>
+                <div class="field">
+                    <span class="field-icon" aria-hidden="true"><i class="bi bi-calendar3"></i></span>
+                    <label class="field-content" for="date">
+                        <span class="field-title">Ngày đi</span>
+                        <input type="date" id="date" value="2026-11-27">
+                    </label>
+                </div>
+            </div>
+            <button class="search-btn" type="button" onclick="searchTour()">
+                <i class="bi bi-search" aria-hidden="true"></i>
+                Tìm kiếm
+            </button>
+        </div>
+        <div class="search-panel flight-panel service-panel" data-service-panel="flight" hidden>
+            <div class="flight-controls">
+                <fieldset class="trip-type">
+                    <legend class="visually-hidden">Loại chuyến bay</legend>
+                    <label><input type="radio" name="tripType" value="roundtrip" checked> Khứ hồi</label>
+                    <label><input type="radio" name="tripType" value="oneway"> Một chiều</label>
+                </fieldset>
+                <div class="passenger-picker">
+                    <button class="passenger-toggle" type="button" aria-expanded="false" aria-controls="passengerOptions">
+                        Hành khách:
+                        <span><i class="bi bi-person-fill" aria-hidden="true"></i> <span data-passenger-count="adult">2</span></span>
+                        <span><i class="bi bi-person" aria-hidden="true"></i> <span data-passenger-count="child">0</span></span>
+                        <span><i class="bi bi-person-walking" aria-hidden="true"></i> <span data-passenger-count="infant">0</span></span>
+                        <i class="bi bi-chevron-down passenger-chevron" aria-hidden="true"></i>
+                    </button>
+                    <div class="passenger-options" id="passengerOptions" hidden>
+                        <div class="passenger-row" data-passenger-row="adult">
+                            <span>Người lớn<small>Từ 12 tuổi</small></span>
+                            <div class="passenger-stepper">
+                                <button type="button" data-passenger-change="-1" data-passenger-type="adult" aria-label="Giảm người lớn">−</button>
+                                <span data-passenger-value="adult">2</span>
+                                <button type="button" data-passenger-change="1" data-passenger-type="adult" aria-label="Tăng người lớn">+</button>
+                            </div>
+                        </div>
+                        <div class="passenger-row" data-passenger-row="child">
+                            <span>Trẻ em<small>Từ 2 đến 11 tuổi</small></span>
+                            <div class="passenger-stepper">
+                                <button type="button" data-passenger-change="-1" data-passenger-type="child" aria-label="Giảm trẻ em">−</button>
+                                <span data-passenger-value="child">0</span>
+                                <button type="button" data-passenger-change="1" data-passenger-type="child" aria-label="Tăng trẻ em">+</button>
+                            </div>
+                        </div>
+                        <div class="passenger-row" data-passenger-row="infant">
+                            <span>Em bé<small>Dưới 2 tuổi</small></span>
+                            <div class="passenger-stepper">
+                                <button type="button" data-passenger-change="-1" data-passenger-type="infant" aria-label="Giảm em bé">−</button>
+                                <span data-passenger-value="infant">0</span>
+                                <button type="button" data-passenger-change="1" data-passenger-type="infant" aria-label="Tăng em bé">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flight-fields">
+                <div class="flight-route">
+                    <div class="field autocomplete-field flight-location">
+                        <span class="field-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                        <label class="field-content" for="flightOrigin">
+                            <span class="field-title">Bay từ</span>
+                            <input type="text" id="flightOrigin" placeholder="Chọn điểm khởi hành" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="flightOriginSuggestions" autocomplete="off">
+                        </label>
+                        <div class="suggestion-list" id="flightOriginSuggestions" role="listbox" aria-label="Gợi ý điểm khởi hành"></div>
+                    </div>
+                    <button class="swap-route" type="button" aria-label="Đổi điểm đi và điểm đến"><i class="bi bi-arrow-left-right" aria-hidden="true"></i></button>
+                    <div class="field autocomplete-field flight-location">
+                        <span class="field-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                        <label class="field-content" for="flightDestination">
+                            <span class="field-title">Bay đến</span>
+                            <input type="text" id="flightDestination" placeholder="Chọn điểm đến" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="flightDestinationSuggestions" autocomplete="off">
+                        </label>
+                        <div class="suggestion-list" id="flightDestinationSuggestions" role="listbox" aria-label="Gợi ý điểm đến"></div>
+                    </div>
+                </div>
+                <div class="flight-dates">
+                    <div class="field">
+                        <span class="field-icon" aria-hidden="true"><i class="bi bi-calendar3"></i></span>
+                        <label class="field-content" for="flightDepartDate">
+                            <span class="field-title">Ngày đi</span>
+                            <input type="date" id="flightDepartDate">
+                        </label>
+                    </div>
+                    <div class="field return-date-field">
+                        <span class="field-icon" aria-hidden="true"><i class="bi bi-calendar3"></i></span>
+                        <label class="field-content" for="flightReturnDate">
+                            <span class="field-title">Ngày về</span>
+                            <input type="date" id="flightReturnDate">
+                        </label>
+                    </div>
+                </div>
+                <button class="search-btn flight-search-btn" type="button">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                    Tìm kiếm
+                </button>
+            </div>
+            <p class="flight-search-message" role="status" aria-live="polite"></p>
+        </div>
+        <div class="search-panel hotel-panel service-panel" data-service-panel="hotel" hidden>
+            <div class="hotel-controls">
+                <div class="hotel-guest-picker">
+                    <button class="hotel-guest-toggle" type="button" aria-expanded="false" aria-controls="hotelGuestOptions">
+                        Phòng &amp; Số khách:
+                        <span><i class="bi bi-door-open-fill" aria-hidden="true"></i> <span data-hotel-guest-count="rooms">1</span></span>
+                        <span><i class="bi bi-person-fill" aria-hidden="true"></i> <span data-hotel-guest-count="adults">2</span></span>
+                        <span><i class="bi bi-person" aria-hidden="true"></i> <span data-hotel-guest-count="children">0</span></span>
+                        <i class="bi bi-chevron-down hotel-guest-chevron" aria-hidden="true"></i>
+                    </button>
+                    <div class="hotel-guest-options" id="hotelGuestOptions" hidden>
+                        <div class="hotel-guest-row">
+                            <span>Phòng</span>
+                            <div class="hotel-guest-stepper">
+                                <button type="button" data-hotel-guest-change="-1" data-hotel-guest-type="rooms" aria-label="Giảm số phòng">−</button>
+                                <span data-hotel-guest-value="rooms">1</span>
+                                <button type="button" data-hotel-guest-change="1" data-hotel-guest-type="rooms" aria-label="Tăng số phòng">+</button>
+                            </div>
+                        </div>
+                        <div class="hotel-guest-row">
+                            <span>Người lớn<small>Từ 18 tuổi</small></span>
+                            <div class="hotel-guest-stepper">
+                                <button type="button" data-hotel-guest-change="-1" data-hotel-guest-type="adults" aria-label="Giảm người lớn">−</button>
+                                <span data-hotel-guest-value="adults">2</span>
+                                <button type="button" data-hotel-guest-change="1" data-hotel-guest-type="adults" aria-label="Tăng người lớn">+</button>
+                            </div>
+                        </div>
+                        <div class="hotel-guest-row">
+                            <span>Trẻ em<small>Dưới 18 tuổi</small></span>
+                            <div class="hotel-guest-stepper">
+                                <button type="button" data-hotel-guest-change="-1" data-hotel-guest-type="children" aria-label="Giảm trẻ em">−</button>
+                                <span data-hotel-guest-value="children">0</span>
+                                <button type="button" data-hotel-guest-change="1" data-hotel-guest-type="children" aria-label="Tăng trẻ em">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-fields">
+                <div class="field autocomplete-field hotel-location">
+                    <span class="field-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                    <label class="field-content" for="hotelDestination">
+                        <span class="field-title">Địa điểm</span>
+                        <input type="text" id="hotelDestination" placeholder="Khách sạn, điểm đến, thành phố..." role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="hotelDestinationSuggestions" autocomplete="off">
+                    </label>
+                    <div class="suggestion-list" id="hotelDestinationSuggestions" role="listbox" aria-label="Gợi ý điểm đến khách sạn"></div>
+                </div>
+                <div class="hotel-date-range">
+                    <div class="field hotel-date-field">
+                        <span class="field-icon" aria-hidden="true"><i class="bi bi-calendar3"></i></span>
+                        <label class="field-content" for="hotelCheckIn">
+                            <span class="field-title">Nhận phòng</span>
+                            <input type="date" id="hotelCheckIn">
+                        </label>
+                    </div>
+                    <div class="field hotel-date-field">
+                        <span class="field-icon" aria-hidden="true"><i class="bi bi-calendar3"></i></span>
+                        <label class="field-content" for="hotelCheckOut">
+                            <span class="field-title">Trả phòng</span>
+                            <input type="date" id="hotelCheckOut">
+                        </label>
+                    </div>
+                    <span class="hotel-night-count" aria-live="polite">1 đêm</span>
+                </div>
+                <button class="search-btn hotel-search-btn" type="button">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                    Tìm kiếm
+                </button>
+            </div>
+            <p class="hotel-search-message" role="status" aria-live="polite"></p>
+        </div>
+        <div class="search-panel flight-hotel-panel service-panel" data-service-panel="flight-hotel" hidden>
+            <div class="hotel-controls">
+                <div class="hotel-guest-picker combo-guest-picker">
+                    <button class="hotel-guest-toggle combo-guest-toggle" type="button" aria-expanded="false" aria-controls="comboGuestOptions">
+                        Phòng &amp; Số khách:
+                        <span><i class="bi bi-door-open-fill" aria-hidden="true"></i> <span data-combo-guest-count="rooms">1</span></span>
+                        <span><i class="bi bi-person-fill" aria-hidden="true"></i> <span data-combo-guest-count="adults">1</span></span>
+                        <span><i class="bi bi-person" aria-hidden="true"></i> <span data-combo-guest-count="children">0</span></span>
+                        <span><i class="bi bi-person-walking" aria-hidden="true"></i> <span data-combo-guest-count="infants">0</span></span>
+                        <i class="bi bi-chevron-down hotel-guest-chevron" aria-hidden="true"></i>
+                    </button>
+                    <div class="hotel-guest-options combo-guest-options" id="comboGuestOptions" hidden>
+                        <div class="hotel-guest-row">
+                            <span>Phòng</span>
+                            <div class="hotel-guest-stepper">
+                                <button type="button" data-combo-guest-change="-1" data-combo-guest-type="rooms" aria-label="Giảm số phòng">−</button>
+                                <span data-combo-guest-value="rooms">1</span>
+                                <button type="button" data-combo-guest-change="1" data-combo-guest-type="rooms" aria-label="Tăng số phòng">+</button>
+                            </div>
+                        </div>
+                        <div class="hotel-guest-row">
+                            <span>Người lớn<small>Từ 12 tuổi</small></span>
+                            <div class="hotel-guest-stepper">
+                                <button type="button" data-combo-guest-change="-1" data-combo-guest-type="adults" aria-label="Giảm người lớn">−</button>
+                                <span data-combo-guest-value="adults">1</span>
+                                <button type="button" data-combo-guest-change="1" data-combo-guest-type="adults" aria-label="Tăng người lớn">+</button>
+                            </div>
+                        </div>
+                        <div class="hotel-guest-row">
+                            <span>Trẻ em<small>Từ 2 đến 11 tuổi</small></span>
+                            <div class="hotel-guest-stepper">
+                                <button type="button" data-combo-guest-change="-1" data-combo-guest-type="children" aria-label="Giảm trẻ em">−</button>
+                                <span data-combo-guest-value="children">0</span>
+                                <button type="button" data-combo-guest-change="1" data-combo-guest-type="children" aria-label="Tăng trẻ em">+</button>
+                            </div>
+                        </div>
+                        <div class="hotel-guest-row">
+                            <span>Em bé<small>Dưới 2 tuổi</small></span>
+                            <div class="hotel-guest-stepper">
+                                <button type="button" data-combo-guest-change="-1" data-combo-guest-type="infants" aria-label="Giảm em bé">−</button>
+                                <span data-combo-guest-value="infants">0</span>
+                                <button type="button" data-combo-guest-change="1" data-combo-guest-type="infants" aria-label="Tăng em bé">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="combo-fields">
+                <div class="flight-route combo-flight-route">
+                    <div class="field autocomplete-field flight-location">
+                        <span class="field-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                        <label class="field-content" for="comboFlightOrigin">
+                            <span class="field-title">Bay từ</span>
+                            <input type="text" id="comboFlightOrigin" placeholder="Địa điểm bất kỳ..." role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="comboFlightOriginSuggestions" autocomplete="off">
+                        </label>
+                        <div class="suggestion-list" id="comboFlightOriginSuggestions" role="listbox" aria-label="Gợi ý điểm khởi hành"></div>
+                    </div>
+                    <button class="swap-route" type="button" aria-label="Đổi điểm đi và điểm đến"><i class="bi bi-arrow-left-right" aria-hidden="true"></i></button>
+                    <div class="field autocomplete-field flight-location">
+                        <span class="field-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                        <label class="field-content" for="comboFlightDestination">
+                            <span class="field-title">Bay đến</span>
+                            <input type="text" id="comboFlightDestination" placeholder="Địa điểm bất kỳ..." role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="comboFlightDestinationSuggestions" autocomplete="off">
+                        </label>
+                        <div class="suggestion-list" id="comboFlightDestinationSuggestions" role="listbox" aria-label="Gợi ý điểm đến"></div>
+                    </div>
+                </div>
+                <div class="flight-dates combo-flight-dates">
+                    <div class="field">
+                        <span class="field-icon" aria-hidden="true"><i class="bi bi-calendar3"></i></span>
+                        <label class="field-content" for="comboFlightDepartDate">
+                            <span class="field-title">Ngày đi</span>
+                            <input type="date" id="comboFlightDepartDate">
+                        </label>
+                    </div>
+                    <div class="field">
+                        <span class="field-icon" aria-hidden="true"><i class="bi bi-calendar3"></i></span>
+                        <label class="field-content" for="comboFlightReturnDate">
+                            <span class="field-title">Ngày về</span>
+                            <input type="date" id="comboFlightReturnDate">
+                        </label>
+                    </div>
+                </div>
+                <div class="field autocomplete-field hotel-location combo-hotel-location">
+                    <span class="field-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                    <label class="field-content" for="comboHotelDestination">
+                        <span class="field-title">Địa điểm</span>
+                        <input type="text" id="comboHotelDestination" placeholder="Khách sạn, điểm đến, thành phố..." role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="comboHotelDestinationSuggestions" autocomplete="off">
+                    </label>
+                    <div class="suggestion-list" id="comboHotelDestinationSuggestions" role="listbox" aria-label="Gợi ý điểm đến khách sạn"></div>
+                </div>
+                <div class="hotel-date-range combo-hotel-dates">
+                    <div class="field hotel-date-field">
+                        <span class="field-icon" aria-hidden="true"><i class="bi bi-calendar3"></i></span>
+                        <label class="field-content" for="comboHotelCheckIn">
+                            <span class="field-title">Nhận phòng</span>
+                            <input type="date" id="comboHotelCheckIn">
+                        </label>
+                    </div>
+                    <div class="field hotel-date-field">
+                        <span class="field-icon" aria-hidden="true"><i class="bi bi-calendar3"></i></span>
+                        <label class="field-content" for="comboHotelCheckOut">
+                            <span class="field-title">Trả phòng</span>
+                            <input type="date" id="comboHotelCheckOut">
+                        </label>
+                    </div>
+                </div>
+                <button class="search-btn combo-search-btn" type="button">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                    Tìm kiếm
+                </button>
+            </div>
+            <p class="combo-search-message" role="status" aria-live="polite"></p>
+        </div>
+    </section>
+    <section class="featured-tours" aria-labelledby="featuredToursTitle">
+        <div class="tour-heading">
+            <div>
+                <h2 id="featuredToursTitle">Các Tour Du Lịch Nổi Bật</h2>
+                <p>Khám phá những hành trình được yêu thích trên khắp Việt Nam</p>
+            </div>
+            <a class="tour-more-link" href="dattour.html">Xem thêm <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="tour-filters" role="group" aria-label="Lọc tour theo khu vực">
+            <button class="tour-filter active" type="button" data-region="all" aria-pressed="true">Tất cả</button>
+            <button class="tour-filter" type="button" data-region="mien-bac" aria-pressed="false">Miền Bắc</button>
+            <button class="tour-filter" type="button" data-region="mien-trung" aria-pressed="false">Miền Trung</button>
+            <button class="tour-filter" type="button" data-region="tay-nguyen" aria-pressed="false">Tây Nguyên</button>
+            <button class="tour-filter" type="button" data-region="mien-nam" aria-pressed="false">Miền Nam</button>
+        </div>
+        <div class="tour-carousel">
+            <button type="button" class="carousel-btn prev" aria-label="Tour trước"><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+
+          <div class="tour-grid" id="tourGrid">
+            <article class="tour-card" data-region="mien-trung">
+                <div class="tour-media">
+                    <img src="images/nghean.jpg" alt="Nghệ An" class="tour-img">
+                    <span class="tour-badge">Miền Trung</span>
+                    <button class="tour-quick-view" type="button" aria-label="Xem nhanh tour Nghệ An"><i class="bi bi-eye" aria-hidden="true"></i> Xem nhanh</button>
+                </div>
+                <div class="tour-content">
+                    <h3><a class="tour-title" href="details/nghean.html">Nghệ An - Về Miền Quê Bác</a></h3>
+                    <p class="tour-description">Thăm quê hương Chủ tịch Hồ Chí Minh, tắm biển Cửa Lò trong xanh và thưởng thức đặc sản xứ Nghệ.</p>
+                    <div class="tour-meta"><span><i class="bi bi-geo-alt" aria-hidden="true"></i> Nghệ An</span><span>Tour trọn gói</span></div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price"><small>Giá từ</small><strong>1.800.000₫</strong></div>
+                        <a class="tour-details-link" href="details/nghean.html">Xem chi tiết</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card" data-region="tay-nguyen">
+                <div class="tour-media">
+                    <img src="images/dalat.webp" alt="Đà Lạt" class="tour-img">
+                    <span class="tour-badge">Tây Nguyên</span>
+                    <button class="tour-quick-view" type="button" aria-label="Xem nhanh tour Đà Lạt"><i class="bi bi-eye" aria-hidden="true"></i> Xem nhanh</button>
+                </div>
+                <div class="tour-content">
+                    <h3><a class="tour-title" href="details/dalat.html">Đà Lạt - Thành Phố Ngàn Hoa</a></h3>
+                    <p class="tour-description">Tận hưởng không khí se lạnh, check-in đồi thông thơ mộng và các quán cà phê view ngắm mây.</p>
+                    <div class="tour-meta"><span><i class="bi bi-geo-alt" aria-hidden="true"></i> Đà Lạt</span><span>Tour trọn gói</span></div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price"><small>Giá từ</small><strong>2.900.000₫</strong></div>
+                        <a class="tour-details-link" href="details/dalat.html">Xem chi tiết</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card" data-region="mien-bac">
+                <div class="tour-media">
+                    <img src="images/hagiang.jpg" alt="Hà Giang" class="tour-img">
+                    <span class="tour-badge">Miền Bắc</span>
+                    <button class="tour-quick-view" type="button" aria-label="Xem nhanh tour Hà Giang"><i class="bi bi-eye" aria-hidden="true"></i> Xem nhanh</button>
+                </div>
+                <div class="tour-content">
+                    <h3><a class="tour-title" href="details/hagiang.html">Hà Giang - Mùa Hoa Tam Giác Mạch</a></h3>
+                    <p class="tour-description">Khám phá cao nguyên đá Đồng Văn hùng vĩ và văn hóa bản địa đặc sắc vùng cao.</p>
+                    <div class="tour-meta"><span><i class="bi bi-geo-alt" aria-hidden="true"></i> Hà Giang</span><span>Tour trọn gói</span></div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price"><small>Giá từ</small><strong>2.500.000₫</strong></div>
+                        <a class="tour-details-link" href="details/hagiang.html">Xem chi tiết</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card" data-region="mien-trung">
+                <div class="tour-media">
+                    <img src="images/danang.jpg" alt="Đà Nẵng - Hội An" class="tour-img">
+                    <span class="tour-badge">Miền Trung</span>
+                    <button class="tour-quick-view" type="button" aria-label="Xem nhanh tour Đà Nẵng - Hội An"><i class="bi bi-eye" aria-hidden="true"></i> Xem nhanh</button>
+                </div>
+                <div class="tour-content">
+                    <h3><a class="tour-title" href="details/danang.html">Đà Nẵng - Hội An</a></h3>
+                    <p class="tour-description">Tận hưởng thành phố đáng sống nhất Việt Nam và phố cổ lung linh đèn lồng về đêm.</p>
+                    <div class="tour-meta"><span><i class="bi bi-geo-alt" aria-hidden="true"></i> Đà Nẵng</span><span>Tour trọn gói</span></div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price"><small>Giá từ</small><strong>3.200.000₫</strong></div>
+                        <a class="tour-details-link" href="details/danang.html">Xem chi tiết</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card" data-region="mien-nam">
+                <div class="tour-media">
+                    <img src="images/phuquoc.jpg" alt="Phú Quốc" class="tour-img">
+                    <span class="tour-badge">Miền Nam</span>
+                    <button class="tour-quick-view" type="button" aria-label="Xem nhanh tour Phú Quốc"><i class="bi bi-eye" aria-hidden="true"></i> Xem nhanh</button>
+                </div>
+                <div class="tour-content">
+                    <h3><a class="tour-title" href="details/phuquoc.html">Phú Quốc - Đảo Ngọc Thiên Đường</a></h3>
+                    <p class="tour-description">Nghỉ dưỡng biển xanh cát trắng, nắng vàng và thưởng thức hải sản tươi ngon.</p>
+                    <div class="tour-meta"><span><i class="bi bi-geo-alt" aria-hidden="true"></i> Phú Quốc</span><span>Tour trọn gói</span></div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price"><small>Giá từ</small><strong>4.500.000₫</strong></div>
+                        <a class="tour-details-link" href="details/phuquoc.html">Xem chi tiết</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card" data-region="mien-nam">
+                <div class="tour-media">
+                    <img src="images/cuchi.jpg" alt="Địa đạo Củ Chi" class="tour-img">
+                    <span class="tour-badge">Miền Nam</span>
+                    <button class="tour-quick-view" type="button" aria-label="Xem nhanh tour Củ Chi"><i class="bi bi-eye" aria-hidden="true"></i> Xem nhanh</button>
+                </div>
+                <div class="tour-content">
+                    <h3><a class="tour-title" href="details/cuchi.html">TP.HCM - Địa đạo Củ Chi</a></h3>
+                    <p class="tour-description">Khám phá hệ thống hầm ngầm lịch sử và tìm hiểu về tinh thần kiên cường của vùng đất thép.</p>
+                    <div class="tour-meta"><span><i class="bi bi-geo-alt" aria-hidden="true"></i> TP. Hồ Chí Minh</span><span>Tour trọn gói</span></div>
+                    <div class="tour-card-footer">
+                        <div class="tour-price"><small>Giá từ</small><strong>1.200.000₫</strong></div>
+                        <a class="tour-details-link" href="details/cuchi.html">Xem chi tiết</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <button type="button" class="carousel-btn next" aria-label="Tour tiếp theo"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+        </div>
+    </section>
+    <section class="featured-combo" aria-labelledby="comboTitle">
+        <h2 class="section-title" id="comboTitle">Combo Tốt Nhất Hôm Nay</h2>
+        <a href="details/combosapa.html" class="combo-banner">
+            <img src="images/sapa.png" alt="Combo Tốt Nhất Hôm Nay">
         </a>
+    </section>
+    <dialog class="tour-dialog" id="tourQuickView">
+        <button class="tour-dialog-close" type="button" aria-label="Đóng xem nhanh">
+            <i class="bi bi-x-lg" aria-hidden="true"></i>
+        </button>
+        <img class="tour-dialog-image" src="" alt="">
+        <div class="tour-dialog-content">
+            <span class="tour-dialog-region"></span>
+            <h2 class="tour-dialog-title"></h2>
+            <p class="tour-dialog-description"></p>
+            <strong class="tour-dialog-price"></strong>
+            <a class="tour-dialog-link" href="#">Xem chi tiết tour</a>
+        </div>
+    </dialog>
 
-        <a href="#" aria-label="Facebook" class="social-fb">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.7v3.2h2.8V21h3z"/>
-          </svg>
-        </a>
-
-        <a href="#" aria-label="TikTok" class="social-tt">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M16.6 3c.5 1.8 1.6 3.1 3.4 3.6v2.9c-1.3 0-2.5-.4-3.5-1.1v6.2a5.8 5.8 0 1 1-5.8-5.8c.4 0 .8 0 1.2.1v3a2.9 2.9 0 1 0 2 2.8V3h2.7z"/>
-          </svg>
-        </a>
-
-        <a href="#" aria-label="Zalo" class="social-zl">
-          <svg width="18" height="14" viewBox="0 0 36 22" fill="currentColor">
-            <rect x="1" y="1" width="34" height="20" rx="6" fill="none" stroke="currentColor" stroke-width="2.2"/>
-            <text x="18" y="14.5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9.5" font-weight="800" stroke="none">Zalo</text>
-          </svg>
-        </a>
-      </div>
-      <a href="tel:0000000000" class="daqt-hotline">1800 159 777</a>
-      <div class="daqt-hotline-sub">Tổng đài miễn phí 24/7</div>
-    </div>
-
-    <div class="daqt-col">
-      <div class="daqt-heading">THÔNG TIN</div>
-      <ul class="daqt-list">
-        <li><a href="gioithieu.html">Về chúng tôi</a></li>
-        <li><a href="#">Tạp chí du lịch</a></li>
-        <li><a href="#">Tin tức</a></li>
-        <li><a href="lienhe.html">Trợ giúp</a></li>
-      </ul>
-    </div>
-
-    <div class="daqt-col">
-      <div class="daqt-heading">ĐIỀU KIỆN - ĐIỀU KHOẢN</div>
-      <ul class="daqt-list">
-        <li><a href="#">Chính sách riêng tư</a></li>
-        <li><a href="#">Thỏa thuận sử dụng</a></li>
-        <li><a href="#">Chính sách bảo vệ dữ liệu cá nhân</a></li>
-      </ul>
-    </div>
-
-    <div class="daqt-col">
-      <div class="daqt-heading">CHẤP NHẬN THANH TOÁN</div>
-      <div class="daqt-payments">
-        <span class="daqt-pay-item">
-          <svg width="42" height="16" viewBox="0 0 42 16">
-            <text x="2" y="13" fill="#38bdf8" font-family="Arial, sans-serif" font-size="13" font-weight="900" font-style="italic">VISA</text>
-          </svg>
-        </span>
-
-        <span class="daqt-pay-item">
-          <svg width="52" height="18" viewBox="0 0 52 18">
-            <text x="2" y="7" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="6" font-weight="700">Verified by</text>
-            <text x="2" y="16" fill="#38bdf8" font-family="Arial, sans-serif" font-size="9" font-weight="900" font-style="italic">VISA</text>
-          </svg>
-        </span>
-
-        <span class="daqt-pay-item">
-          <svg width="44" height="18" viewBox="0 0 44 18">
-            <circle cx="17" cy="9" r="6.5" fill="#eb001b"></circle>
-            <circle cx="27" cy="9" r="6.5" fill="#f79e1b" fill-opacity="0.88"></circle>
-          </svg>
-        </span>
-
-        <span class="daqt-pay-item">
-          <svg width="46" height="16" viewBox="0 0 46 16">
-            <text x="2" y="12" fill="#ef4444" font-family="Arial, sans-serif" font-size="10" font-weight="900">VN</text>
-            <text x="16" y="12" fill="#38bdf8" font-family="Arial, sans-serif" font-size="10" font-weight="900">PAY</text>
-          </svg>
-        </span>
-
-        <span class="daqt-pay-item">
-          <svg width="46" height="16" viewBox="0 0 46 16">
-            <rect x="4" y="2" width="11" height="12" rx="3" fill="#0079be"></rect>
-            <rect x="17.5" y="2" width="11" height="12" rx="3" fill="#e50012"></rect>
-            <rect x="31" y="2" width="11" height="12" rx="3" fill="#008c45"></rect>
-            <text x="6.5" y="10.5" fill="#ffffff" font-family="Arial, sans-serif" font-size="6.5" font-weight="900">J</text>
-            <text x="20" y="10.5" fill="#ffffff" font-family="Arial, sans-serif" font-size="6.5" font-weight="900">C</text>
-            <text x="33.5" y="10.5" fill="#ffffff" font-family="Arial, sans-serif" font-size="6.5" font-weight="900">B</text>
-          </svg>
-        </span>
-
-        <span class="daqt-pay-item">
-          <svg width="52" height="16" viewBox="0 0 52 16">
-            <rect x="2" y="2" width="12" height="12" rx="3" fill="#008fe5"></rect>
-            <text x="5" y="10.5" fill="#ffffff" font-family="Arial, sans-serif" font-size="7" font-weight="900">Z</text>
-            <text x="17" y="11.5" fill="#38bdf8" font-family="Arial, sans-serif" font-size="8.5" font-weight="800">ZaloPay</text>
-          </svg>
-        </span>
-
-        <span class="daqt-pay-item">
-          <svg width="46" height="16" viewBox="0 0 46 16">
-            <rect x="2" y="3" width="9" height="10" fill="none" stroke="#38bdf8" stroke-width="1.5"></rect>
-            <text x="14" y="12" fill="#f8fafc" font-family="Arial, sans-serif" font-size="8" font-weight="800">QR PAY</text>
-          </svg>
-        </span>
-
-        <span class="daqt-pay-item">
-          <svg width="44" height="16" viewBox="0 0 44 16">
-            <text x="4" y="12" fill="#ec4899" font-family="Arial, sans-serif" font-size="10" font-weight="900">momo</text>
-          </svg>
-        </span>
-      </div>
-    </div>
-  </div>
-
-  <div class="daqt-footer-bottom">
-    &copy; 2026 DAQT Travel. Bản quyền thuộc về Công ty Cổ phần Du Lịch DAQT.
-  </div>
-</footer>
-   <script>
-  const tourGrid = document.getElementById('tourGrid');
-  const prevBtn = document.querySelector('.carousel-btn.prev');
-  const nextBtn = document.querySelector('.carousel-btn.next');
-
-  function getStep() {
-    const firstCard = tourGrid.querySelector('.tour-card');
-    return firstCard ? firstCard.offsetWidth + 20 : 260;
-  }
-
-  prevBtn.addEventListener('click', () => {
-    tourGrid.scrollBy({ left: -getStep(), behavior: 'smooth' });
-  });
-
-  nextBtn.addEventListener('click', () => {
-    tourGrid.scrollBy({ left: getStep(), behavior: 'smooth' });
-  });
-</script>
+<div data-site-footer></div>
+    <script src="js/trangchu.js" defer></script>
+    <script src="js/footer-loader.js"></script>
 </body>
 </html>
